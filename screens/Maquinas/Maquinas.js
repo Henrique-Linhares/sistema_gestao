@@ -6,7 +6,7 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 
 export default function Maquinas({ navigation }) {
     function handleSelecionar(maquina) {
-        navigation.navigate('Detalhe', {
+        navigation.navigate('Dashboard', {
             id: maquina.id,
             nome: maquina.nome,
             status: maquina.status,
