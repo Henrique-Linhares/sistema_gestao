@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, SectionList, TouchableOpacity, SafeAreaView } from 'react-native';
+import { View, Text, SectionList, TouchableOpacity} from 'react-native';
 import { maquinas } from '../../api/data';
 import styles from './MaquinasStyles';
 import { SafeAreaView } from 'react-native-safe-area-context';
@@ -40,7 +40,7 @@ export default function Maquinas({ navigation }) {
 
     return (
         <SafeAreaView style={styles.container}>
-            <Text style={styles.titulo}>Máquinas da Planta</Text>
+            <Text style={styles.titulo}>Máquinas</Text>
             <SectionList
                 sections={maquinas}
                 keyExtractor={item => item.id}
